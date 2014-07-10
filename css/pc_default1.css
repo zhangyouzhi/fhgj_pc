@@ -1,0 +1,111 @@
+#phone_top{
+	background:#F46D08;
+	width:100%;
+	height:200px;
+  }
+#left_logo{
+	float:left;
+	width:420px;
+	height:135px;
+	top: 155px;
+	left: 35px;
+	margin-top: 40px;
+	margin-left: 20px;
+}
+#right_logo{
+	float:right;
+	width:182px;
+	height:136px;
+	top: 100px;
+	left: 963px;
+	margin-top: 40px;
+	margin-right: 20px;
+}
+
+
+header {
+overflow: hidden;
+}
+
+#middle .slider_area,#middle .content{
+	display: inline;
+}
+
+#middle .slider_area {
+	float:left;
+	height: 300px;
+	width: 54%;
+	background-color: #d35851;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-left: 12%;
+}
+
+#middle .content {
+	float:right;
+	width: 22%;
+	height: 300px;
+	background-color: #dedede;
+	margin-top: 3%;
+	margin-bottom: 6%;
+	margin-right: 12%;
+	left: 50%;
+}
+#middle .content .tittle {
+	background-color: #f0f0f0;
+	height: 50px;
+	width: 100%;
+	margin: 0px;
+	overflow: hidden;
+}
+#middle .content .login_status {
+	height: 200px;
+	width: 100%;
+	margin-left: 10%;
+}
+#middle .content .tittle .box_m_leftp {
+	background:url(../images/pc_cbd0505001.gif);
+	background-repeat: no-repeat;
+	text-indent:12px;
+	line-height:18px;
+	font-size:18px;
+	left: 60%;
+	margin-left: 10%;
+}
+
+#middle .content .login_status p .box_m_login {
+	width:50%;
+	font-size:17px;
+	color:#fff;
+	background-color:#f27935;
+	height:44px;
+	font-weight:900;
+	border:0;
+	box-shadow: 1px 1px 1px #585858;
+}
+
+#middle {
+	width:100%;
+	background-color: #ffe7af;
+	height: 388px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+#footer{
+	background:#FFB400;
+	height:124px;
+	text-align:right;
+	line-height:50px;
+	font-size:14px;
+	width: 100%;
+	top: 586px;
+}
+
+#dividing_line{
+  height:1px;
+  width:100%;
+  background:#C6C5C5;
+}

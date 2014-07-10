@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>武汉泛海城市广场</title>
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/pc_default.css">
+<link rel="stylesheet" type="text/css" href="css/pc_style.css">
+<link rel="stylesheet" type="text/css" href="css/pc_popbox.css">
+</head>
+<body>
+<div id="screen"></div>
+<div class="popbox3">
+  <h2 class="showHeader"> 免责声明 </h2>
+  <div class="popMain">
+    <div class="mainlist3">
+      <p> 尊敬的用户，您好：<br />
+        &ensp;&ensp;欢迎使用武汉泛海城市广场无线网络，本广场为您提供免费WIFI网络接入环境，并负责保证互联网应用网络畅通，但不承担用户访问互联网应用过程中产生的相关风险。 </p>
+      <div class="mainSign">
+        <p> 武汉泛海城市广场 </p>
+      </div>
+    </div>
+  </div>
+  <div class="popFoot">
+    <table width="100%">
+      <tr>
+        <td align="center" colspan="2"><input type="button" value="确&ensp;认" id="Cancel-the-ticket"  class="close" onclick="closeInfoBox();"/></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div id="phone_top">
+  <header>
+    <div id="logo"><img src="images/pc_logo.png"></div>
+  </header>
+</div>
+<div class="banner">
+  <ul>
+    <li style="background-image: url('images/pc_top-slider-1.jpg');filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/pc_top-slider-1.jpg', sizingMethod='scale')\9;"></li>
+    <li style="background-image: url('images/pc_top-slider-2.jpg');filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/pc_top-slider-2.jpg', sizingMethod='scale')\9;"></li>
+    <li style="background-image: url('images/pc_top-slider-3.jpg');filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/pc_top-slider-3.jpg', sizingMethod='scale')\9;"></li>
+  </ul>
+</div>
+<div class="content">
+  <div id="login_area">
+    <p id="box_m_leftp">无线上网登录 :</p>
+    <br>
+    <div class="from_pw_input1">
+      <div id="fj1">
+        <input type="text" name="username" id="username"  placeholder="输入手机号码" autocomplete="off"/>
+      </div>
+    </div>
+    <br>
+    <div class="from_pw_input2">
+      <div id="fj2">
+        <div id="fj4">
+          <input type="password" name="password" id="password" placeholder="输入验证码" autocomplete="off"/>
+        </div>
+      </div>
+      <div id="fj3">
+        <input type="button" value="获取验证码" id="getPassOrReg" class="from_pw_input3"/>
+      </div>
+    </div>
+    <br>
+    <input type="checkbox"  id="ck"/>
+    &nbsp;我已阅读并<span class="ty" id="popAgreement">同意免责条款</span> <br>
+    <br>
+    <input type="button" value="登&nbsp;&nbsp;&nbsp;&nbsp;录"  class="box_m_login">
+  </div>
+</div>
+<div id="footer">技术支持:北京北纬通信科技股份有限公司</div>
+</body>
+<script src="js/jquery-latest.min.js"></script>
+<script src="js/unslider.min.js"></script>
+<script>
+			if(window.chrome) {
+				$('.banner li').css('background-size', '100% 100%');
+			}
+			$('.banner').unslider({
+				//arrows: true,
+				speed: 500,   //速度         
+  				delay: 2500,  //延迟
+				fluid: true,
+				dots: true
+			});
+			//  Find any element starting with a # in the URL
+			//  And listen to any click events it fires
+			$('a[href^="#"]').click(function() {
+				//  Find the target element
+				var target = $($(this).attr('href'));
+				//  And get its position
+				var pos = target.offset(); // fallback to scrolling to top || {left: 0, top: 0};
+				//  jQuery will return false if there's no element
+				//  and your code will throw errors if it tries to do .offset().left;
+				if(pos) {
+					//  Scroll the page
+					$('html, body').animate({
+						scrollTop: pos.top,
+						scrollLeft: pos.left
+					}, 1000);
+				}
+				//  Don't let them visit the url, we'll scroll you there
+				return false;
+			});
+		</script>
+<script type="text/javascript" language="javascript" src="js/common.js" charset="UTF-8"></script>
+<script type="text/javascript">
+			$("document").ready(function() {
+				$("#popAgreement").click(function(){
+					showInfoBox("", "");
+				});
+				
+				$(".box_m_login").click(function(){
+					top.location="pc_success.html";
+					
+				});
+				
+});	
+
+var supportsOrientationChange = "onorientationchange" in window,
+orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+if (!window.addEventListener) {
+    window.attachEvent("onresize", popStatement); 
+}
+else {
+   window.addEventListener(orientationEvent, popStatement, false);
+}
+
+function popStatement() {
+	var h = $(document).height();
+  $('#screen').css({ 'height': h });	
+	$('.popbox3').center();
+}
+</script>
+</html>
